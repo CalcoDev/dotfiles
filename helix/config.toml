@@ -1,0 +1,34 @@
+theme = "gruvbox_material_dark_hard"
+
+[editor]
+line-number = "relative"
+mouse = true
+cursorline = true
+auto-format = false
+rulers = [80]
+bufferline = "multiple"
+scrolloff = 200
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+
+[keys.normal]
+"A-k" = ["goto_line_end","extend_line_below", "delete_selection", "move_line_up", "paste_before"]
+"A-j" = ["goto_line_end","extend_line_below", "delete_selection", "paste_after"]
+
+"A-w" = [":buffer-close"]
+
+[keys.select]
+"A-k" = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
+"A-j" = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
