@@ -9,6 +9,12 @@ rulers = [80]
 bufferline = "multiple"
 scrolloff = 200
 
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+max-indent-retain = 0
+wrap-indicator = ""
+
 [editor.indent-guides]
 render = true
 character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
@@ -22,13 +28,33 @@ select = "underline"
 [editor.file-picker]
 hidden = false
 
-
 [keys.normal]
 "A-k" = ["goto_line_end","extend_line_below", "delete_selection", "move_line_up", "paste_before"]
 "A-j" = ["goto_line_end","extend_line_below", "delete_selection", "paste_after"]
-
+"ret" = "insert_newline"
 "A-w" = [":buffer-close"]
+"A-s" = [":w"]
+
+X = "extend_line_above"
+B = "extend_prev_word_start"
+W = "extend_next_word_start"
+T = "extend_line_down"
+
+H = "extend_char_left"
+L = "extend_char_right"
+
+"tab" = "indent"
+"S-tab" = "unindent"
+
+"C-[" = "rotate_view_reverse"
+"C-]" = "rotate_view"
 
 [keys.select]
 "A-k" = ["goto_line_end","extend_line_below",  "delete_selection", "move_line_up", "paste_before", "select_mode"]
 "A-j" = ["goto_line_end","extend_line_below",  "delete_selection", "paste_after", "select_mode" ]
+"tab" = "indent"
+"S-tab" = "unindent"
+
+[keys.insert]
+"A-c" = "normal_mode"
+"A-s" = [":w"]
