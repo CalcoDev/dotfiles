@@ -1,0 +1,38 @@
+# yeah yeah, Alacritty. Seems to work better for some reason. Will try wezterm.
+
+# TODO(calco): Add themes to thing lol
+# import = [
+#     "C:\\Users\\calco\\AppData\\Roaming\\alacritty\\themes\\themes\\oceanic_next.toml",
+# ]
+
+# working_directory = "C:\\Users\\calco\\Documents\\Calcopod"
+
+[shell]
+# program = "C:/Program Files/Git/bin/bash.exe"
+# program = "ubuntu"
+program = "C:\\Windows\\System32\\wsl.exe"
+# args = ["-d", "Ubuntu"]
+# args = ["-i", "-l"]
+
+[window]
+padding = { x = 10, y = 10 }
+opacity = 0.85
+title = "Le Calcopod Terminal"
+
+[font]
+# normal = { family = "Iosevka", style = "Extended" }
+# normal = { family = "Iosevka Nerd Font" }
+# normal = { family = "JetBrains Mono" }
+# normal = { family = "JetBrainsMono Nerd Font" }
+# normal = { family = "Intel One Mono" }
+# normal = { family = "Operator Mono", style = "Book" }
+# normal = { family = "Cascadia Code" }
+
+[keyboard]
+bindings = [
+    { key = "F11", action = "ToggleFullscreen" },
+    { key = "{", mods = "Control", action = "ReceiveChar" },
+    { key = "}", mods = "Control", action = "ReceiveChar" },
+    { key = "/", mods = "Control", chars = "\u001f" },
+    { key = ";", mods = "Control", chars = "^K" },
+]
