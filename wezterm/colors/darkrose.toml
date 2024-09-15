@@ -1,0 +1,12 @@
+# dark rose maybe
+[colors]
+foreground = "#c9c1c9"
+background = "#000000"
+cursor_bg = "#c9c1c9"
+cursor_border = "#c9c1c9"
+cursor_fg = "#000000"
+selection_bg = "#281c2b"
+selection_fg = "#c9c1c9"
+
+ansi = ["#101010", "#6d0011", "#9e4244", "#a26b35", "#b76e79", "#8b2950", "#4d5566", "#8b8b8b"]
+brights = ["#101010", "#f85149", "#f6aca7", "#f0883e", "#ff7979", "#ff7979", "#8a95a2", "#c9c1c9"]

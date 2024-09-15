@@ -1,0 +1,12 @@
+# Custom Theme Name
+[colors]
+foreground = "#f4f9fb"
+background = "#0e0a16"
+cursor_bg = "#f4f9fb"
+cursor_border = "#f4f9fb"
+cursor_fg = "#0e0a16"
+selection_bg = "#23193a"  # No selection colors provided, using color0
+selection_fg = "#f4f9fb"  # Adjusted to match the new foreground
+
+ansi = ["#23193a", "#4861a5", "#757ca2", "#7a8297", "#2b97da", "#07c5de", "#01c8d8", "#c9dfe8"]
+brights = ["#39285e", "#6a81c0", "#969cbe", "#9aa1b5", "#5cb1e5", "#29e1f9", "#18edfe", "#f4f9fb"]
