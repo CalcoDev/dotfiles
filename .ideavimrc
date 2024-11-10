@@ -1,0 +1,66 @@
+let mapleader = " "
+nmap <space> <Leader>
+
+nnoremap <space> <Nop>
+nnoremap <nowait> <space> /
+
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+
+nmap <Tab> i<C-t><Esc><Right>
+nmap <S-Tab> i<C-d><Esc><Right>
+
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+" Remap change surrounding from `cs` to `sr`
+nmap sr cs
+xmap sr cs
+
+" Remap delete surrounding from `ds` to `sd`
+nmap sd ds
+xmap sd ds
+
+" Remap add surrounding from `ys` to `sa`
+nmap sa ys
+xmap sa ys
+xmap S  S
+
+
+nmap <Enter> i<CR><Esc><Right>
+
+" lsp stuff ig
+nmap <Leader>gd :action GotoDeclaration<CR>
+nmap <Leader>gr :action FindUsages<CR>
+" nmap <Leader>gI :action GotoImplementation<CR>
+" nmap <Leader>D :action GotoTypeDeclaration<CR>
+nmap <Leader>ds :action FileStructurePopup<CR>
+nmap <Leader>ws :action SearchEverywhereSymbols<CR>
+nmap <Leader>rn :action RenameElement<CR>
+nmap <Leader>gD :action GotoDeclaration<CR>
+nmap <leader>ca :action ShowIntentionActions<CR>
+nmap <leader>k :action QuickDocumentation<CR>
+
+
+<!-- nmap <leader>sf :action GotoFile<CR> -->
+
+nmap <leader>sd :action ActivateProblemsViewToolWindow<CR>
+
+<!-- nmap <C-w> :action CloseContent<CR>
+nmap gp :action PreviousTab<CR>
+nmap gn :action NextTab<CR> -->
+
+nmap ]q :action GotoNextError<CR>
+nmap [q :action GotoPreviousError<CR>
+nmap ]Q :action GotoNextError<CR>
+nmap [Q :action GotoPreviousError<CR>
+
+nmap <C-A-h> :action Back<CR>
+nmap <C-A-l> :action Forward<CR>
+
+set whichwrap+=<,>,[,]
